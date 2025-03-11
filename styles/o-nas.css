@@ -1,0 +1,150 @@
+.my{
+  background: linear-gradient(
+    to top,
+    #FCC0C5 0%,
+    #FCC0C5 50%,
+    #98042D 50%,
+    #98042D 100%
+  );
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.my img{
+  width: 800px;
+}
+
+.my h1{
+  color: var(--white);
+}
+
+.kdo-jsme{
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
+  padding: 50px;
+}
+
+.kdo-popis{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cile{
+  background-color: var(--secondary);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 10%;
+}
+.cil{
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  gap: 20px;
+}
+.cil1{
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  gap: 14px;
+}
+
+.cilfoto{
+  height: 500px;
+}
+
+.nadpis-rada{
+  padding: 50px;
+}
+
+.nadpis-rada{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.cards{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3 ,400px );
+  grid-template-rows: repeat(3, 400px);
+  place-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.card{
+  background-color: var(--secondary);
+  border-radius: 7%;
+  width: 328px; height: 382px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 10px;
+  gap: 20px;
+}
+
+.card h3{
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.social-icons{
+  position: relative;
+  top:8px; left: 10px;
+}
+
+.mapa{
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+}
+
+.nadpis{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 80%;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.sidlo, .kon{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pod-mapou{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}

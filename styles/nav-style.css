@@ -1,0 +1,50 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: var(--orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    font-size: 32px;
+    color: var(--white);
+    text-decoration: none;
+    filter: drop-shadow(3px 3px #2d272774);
+}
+
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 100%;
+    height: 2px;
+    background: var(--white);
+    transition: transform 0.4s;
+    transform-origin: center;
+}
+  
+.navbar a:hover::before {
+    transform: translateX(-50%) scaleX(1);
+}
+
+.navbar a.active::before {
+    transform: translateX(-50%) scaleX(1);
+}
