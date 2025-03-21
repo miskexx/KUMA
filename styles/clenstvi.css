@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 .nadpis-stan{
@@ -53,8 +54,8 @@
 }
 
 .odkazy-button a{
-    background-color: rgb(33, 31, 31);
-    color: white;
+    background-color: var(--white);
+    color: black;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
@@ -62,15 +63,15 @@
 }
 
 .odkazy-button a:hover{
-    background-color: rgb(0, 0, 0);
-    color: white;
+    background-color: rgb(181, 175, 175);
+    color: rgb(0, 0, 0);
 
 }
 
 .maskot-stan{
     position: relative;
-    bottom: 120px;
-    right: 120px;
+    bottom: 169px;
+    right: 20px;
 }
 
 .vyhody{

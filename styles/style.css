@@ -5,10 +5,12 @@
     --orange: #BF4141;
     --white: #E1E2E7;
 }
-
+/* New Rocker */
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Pathway+Extreme:ital,opsz,wdth,wght@0,8..144,75..100,100..900;1,8..144,75..100,100..900&display=swap');
-
+/* Yatra One */
 @import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Pathway+Extreme:ital,opsz,wdth,wght@0,8..144,75..100,100..900;1,8..144,75..100,100..900&family=Yatra+One&display=swap');
+/* Amarante */
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
 
 
 *{
@@ -19,9 +21,7 @@
 }
 
 body{
-    min-width: 100vh;
     background-color: var(--primary);
-    
 }
 
 main{
@@ -33,33 +33,36 @@ main{
 h1{
     font-size: 40px;
     font-family: New Rocker;
+    letter-spacing: 1px;
 }
 
 h2 {
     font-size: 30px;
     font-family: New Rocker;
+    letter-spacing: 1px;
 }
 
 h3{
     font-size: 24px;
     font-family: New Rocker;
+    letter-spacing: 1px;
 }
   
 p {
-    font-size: 14px;
-    font-family: Yatra One;
+    font-size: 18px;
+    font-family: Amarante;
 }
 
 li{
-    font-size: 14px;
-    font-family: Yatra One;
+    font-size: 18px;
+    font-family: Amarante;
 }
 
 a{
-    font-size: 14px;
-    font-family: Yatra One;   
+    font-size: 18px;
+    font-family: Amarante;   
 }
 button{
-    font-size: 14px;
+    font-size: 18px;
     font-family: New Rocker;
 }

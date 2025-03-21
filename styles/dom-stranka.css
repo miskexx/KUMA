@@ -1,5 +1,6 @@
+/* hero sekce */
 .hero{
-    width: 80%;
+    max-width: 80%;
     margin: auto;
     border: 3px solid #000000;
     display: flex;
@@ -7,11 +8,43 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 50px;
     position: relative;
+    min-height: 30vh;
+    overflow: hidden;
+}
+
+#hero-maskot{
+    width: 90vw;  /* Adjust based on screen size */
+    max-width: 300px;  /* To prevent it from getting too large */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+@media screen and (max-width: 1279px){
+.hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .left-top h2{
+        font-size: 24px;
+    }
+    .left-top h3{
+        font-size: 20px;
+    }
+
 }
 
 .hero::before{
     content: " ";
-    background-image: url('../images/hero.jpg');
+    background-image: url('../images/hero-min.jpg');
     background-size: cover; /* nebo contain */
     background-position: center;
     position: absolute;
@@ -20,6 +53,7 @@
     z-index: -1;
     filter: opacity(80%) brightness(2) saturate(1);
 }
+
 
 .hero-right {
     display: flex;
@@ -82,27 +116,46 @@
     color: var(--secondary);
     background-color: #000000;
 }
+/* hero sekce */
 
-
-
+/* o nas sekce */
 .onas-sekce{
     background-color: var(--secondary);
     margin-top: 25px;
-    padding: 100px 50px;
+    padding: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    width: 100%;
+    max-width: 100%;
 }
 
 .onas-popisky{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
     justify-content: center;
-    width: 80%;
+    gap: 15px;
+}
+
+@media screen and (max-width: 1279px){
+    .onas-sekce{
+        padding: 2rem;
+    }
+    .onas-popisky{
+        grid-template-columns: repeat(1, 120%);
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 757px){
+    .onas-sekce{
+        padding: 2rem;
+    }
+    .onas-popisky{
+        grid-template-columns: repeat(1, 80%);
+        gap: 5px;
+    }
 }
 
 .onas-popisek{
@@ -110,12 +163,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 33%;
 }
+
+@media screen and (max-width: 1279px){
+    .onas-popisek{
+        margin: 15px;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 554px){
+    .onas-popisek{
+        margin: 15px;
+        flex-direction: column;
+    }
+}
+
 .onas-popisek p{
     text-align: center;
     width: 80%;
 }
+
+@media screen and (max-width: 1279px){
+    .onas-popisek p{
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 757px){
+    .onas-popisek p{
+        text-align: left;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 554px){
+    .onas-popisek p{
+        text-align: center;
+        padding: 0px;
+    }
+}
+
+
 
 .odkaz-onas a{
     font-size: 20px;
@@ -142,29 +232,69 @@
 .odkaz-onas a:hover::after {
     transform: scaleX(1);
 }
+/* o nas sekce */
+
+/* stan se clenem sekce
 
 .clenem-ds{
     color: var(--white);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 80%;
+    max-width: 100%;
     margin: auto;
-    margin-top: 25px;
-    padding: 100px 50px;
+    padding: 8rem;
 }
+
+@media screen and (max-width: 903px){
+    .clenem-ds{
+        flex-direction: column;
+        padding: 1rem;
+        padding-top: 2rem;
+        gap: 1rem;
+    }
+}
+
+
 
 .clen-left h2 {
     background-image: linear-gradient(to right, #BF4141, #98042D);
     padding: 20px;
 }
+
+@media screen and (max-width: 903px){
+
+    .clen-left h2{
+        font-size: 24px;
+        justify-self: center;
+        align-items: center;
+        background-image: linear-gradient(to bottom, #BF4141, #98042D);
+        padding: 20px;
+    }
+}
+
 .clen-left ul {
     padding: 20px;
     padding-left: 100px;
-    
 }
+
+.clen-right img{
+    width: 30vw;
+}
+
+@media screen and (max-width: 903px){
+
+    .clen-left ul {
+        padding: 15px;
+        padding-left: 20px;
+    }
+    .clen-right img{
+        width: 300px;
+    }
+}
+
 .clen-left li {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .clen-left a {
@@ -195,31 +325,51 @@
     transform: scaleX(1);
 }
 
+
+ stan se clenem sekce */
+
+/* clenske oddily sekce */
+
 .sekce-oddily{
-    background-color: var(--secondary);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
-}
-.nadpis-oddily{
-    font-size: x-large;
+    padding: 8rem;
+    gap: 60px;
+    color: var(--white);
 }
 
 .clenske-oddily{
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    gap: 15px;
+}
+
+
+@media screen and (max-width: 1279px){
+    .clenske-oddily{
+        grid-template-columns: repeat(2,300px);
+        gap: 40px;
+        column-gap: 20%;
+    }
+}
+@media screen and (max-width: 950px){
+    .sekce-oddily{
+        padding: 20px;
+        padding-top: 50px; padding-bottom: 50px;
+    }
+    .clenske-oddily{
+        grid-template-columns: repeat(1,300px);
+    }
+    .nadpis-oddily h1{
+        font-size: 30px;
+    }
 }
 
 .oddil{
     height: 100%;
-    min-height: 300px;
-    min-width: 300px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -235,6 +385,7 @@
 }
 .oddil-foto img{
     width: 200px; height: 200px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
 
@@ -245,4 +396,22 @@
     font-size: large;
 }
 
+@media screen and (max-width: 553px){
+    .oddil-foto img{
+        width: 150px; height: 150px;
+    }
+    .oddil-foto{
+        min-height: 160px;
+        min-width: 160px;
+    }
+
+}
+
+@media screen and (max-width: 394px){
+    .nadpis-oddily h1{
+        font-size: 25px;
+    }
+}
+
+/* clenske oddily sekce */
 

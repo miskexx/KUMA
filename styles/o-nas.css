@@ -6,7 +6,7 @@
     #98042D 50%,
     #98042D 100%
   );
-    padding: 30px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,6 +31,11 @@
   padding: 50px;
 }
 
+.kdo-jsme img{
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
 .kdo-popis{
   width: 40%;
   display: flex;
@@ -46,6 +51,12 @@
   padding: 50px;
   gap: 10%;
 }
+
+.cile h1{
+  padding: 20px;
+}
+
+
 .cil{
   display: flex;
   flex-direction: row;
@@ -79,8 +90,8 @@
 .cards{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3 ,400px );
-  grid-template-rows: repeat(3, 400px);
+  grid-template-columns: repeat(3 ,450px );
+  grid-template-rows: repeat(3, 450px);
   place-items: center;
   justify-content: center;
   align-content: center;
@@ -89,9 +100,9 @@
 .card{
   background-color: var(--secondary);
   border-radius: 7%;
-  width: 328px; height: 382px;
+  width: 328px; height: 350px;
   display: flex;
-  gap: 5px;
+  gap: 1px;
   flex-direction: column;
 }
 
@@ -99,19 +110,33 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  padding: 10px;
-  gap: 20px;
+  align-items: center;
+  gap: 1px;
+}
+.card img{
+  border-radius: 7%;
 }
 
 .card h3{
   font-size: 20px;
   padding-left: 10px;
 }
+.jmeno-karta{
+  padding: 5px;
+}
+.pozice{
+  padding: 1px;
+  color: var(--primary);
+}
+.medailonek{
+  padding: 5px;
+  text-align: center;
+}
+
 
 .social-icons{
   position: relative;
-  top:8px; left: 10px;
+  top:2px; left: 10px;
 }
 
 .mapa{
@@ -142,9 +167,24 @@
   gap: 10px;
 }
 
+.mapa-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  width: 80%;
+}
+
 .pod-mapou{
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 80%;
 }
+
+.jmeno-karta h2{
+  font-size: 24px
+}
+

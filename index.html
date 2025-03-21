@@ -2,7 +2,7 @@
 <html lang="cs">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>KUMA</title>
         <link rel="icon" src="./images/maskot1111.png" type="image/png">
         <link href="./styles/style.css" rel="stylesheet">
@@ -15,23 +15,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Pathway+Extreme:ital,opsz,wdth,wght@0,8..144,75..100,100..900;1,8..144,75..100,100..900&display=swap" rel="stylesheet">
-
+ 
+    <!--Amarante -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&family=Pathway+Extreme:ital,opsz,wdth,wght@0,8..144,75..100,100..900;1,8..144,75..100,100..900&family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&display=swap" rel="stylesheet">
 
     <body>
         <header class="header">
             <a href="./index.html" class="logo">KUMA</a>
-                <nav class="navbar">
-                    <a class="active" href="./index.html" >Domovská stránka</a>
-                    <a href="./onas.html">O nás</a>
-                    <a href="./clenstvi.html">Členství</a>
-                    <a href="./clen-oddily.html">Členské oddíly</a>
-                    <a href="./knihovna.html">Knihovna</a>
-                    <a href="./archiv.html">Archiv</a>
-                </nav>
+        
+            <!-- Checkbox pro togglování menu -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+        
+            <nav class="navbar">
+                <a class="active" href="./index.html">Domovská stránka</a>
+                <a href="./onas.html">O nás</a>
+                <a href="./clenstvi.html">Členství</a>
+                <a href="./clen-oddily.html">Členské oddíly</a>
+                <a href="./knihovna.html">Knihovna</a>
+                <a href="./archiv.html">Archiv</a>
+            </nav>
         </header>
+        
         
         <main>
             <div class="hero">
@@ -49,7 +56,7 @@
                     </div>
                 </div>
                 <div class="hero-right">
-                    <img src="./images/maskot1111.png" alt="maskot spolku" height="400">
+                    <img id="hero-maskot" src="./images/maskot1111.png" alt="maskot spolku">
                 </div>
             </div>
 
@@ -73,7 +80,7 @@
                 </div>
                
             </section>
-
+<!--
             <section class="clenem-ds">
 
                 <div class="clen-left">
@@ -92,7 +99,7 @@
                 </div>
                 
             </section>
-
+-->
             <section class="sekce-oddily">
 
             <div class="nadpis-oddily">
@@ -142,12 +149,6 @@
             </div>
             
             </section>
-
-
-
-
-
-
 
         </main>
         

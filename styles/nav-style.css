@@ -1,4 +1,4 @@
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,20 +12,27 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo{
+.logo {
     font-size: 32px;
     color: var(--white);
+    font-family: New Rocker;
     text-decoration: none;
-    filter: drop-shadow(3px 3px #2d272774);
+    filter: drop-shadow(0 4px 6px rgba(92, 8, 8, 0.5));
 }
 
+/* Normální stav - menu vedle loga */
+.navbar {
+    display: flex;
+}
 
-.navbar a{
-    position: relative;
-    font-size: 18px;
+.navbar a {
+    font-size: 20px;
     color: var(--white);
     text-decoration: none;
     margin-left: 40px;
+    font-family: New Rocker;
+    filter: drop-shadow(0 4px 6px rgba(92, 8, 8, 0.5));
+    position: relative;
 }
 
 .navbar a::before {
@@ -41,10 +48,60 @@
     transform-origin: center;
 }
   
-.navbar a:hover::before {
+.navbar a:hover::before,
+.navbar a.active::before {
     transform: translateX(-50%) scaleX(1);
 }
 
-.navbar a.active::before {
-    transform: translateX(-50%) scaleX(1);
+/* Skryjeme checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* HAMBURGER MENU - Skrývá navigaci pod 1279px */
+.menu-icon {
+    display: none;
+    font-size: 32px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* Media Query pro mobilní zobrazení */
+@media (max-width: 1279px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: fixed; /* Umožní pokrytí celé obrazovky */
+        top: 0;
+        left: 0;
+        width: 100%; /* Zabere celou šířku */
+        height: 100%; /* Zabere celou výšku */
+        background: var(--orange);
+        opacity: 0.9;
+        border-radius: 0; /* Zrušení zaoblených rohů */
+        box-shadow: none; /* Odstranění stínu */
+        z-index: 1000; /* Zajištění, že bude nad ostatními prvky */
+        padding-top: 70px; /* Posunutí obsahu dolů, aby nepřekrýval horní část */
+    }
+    
+    
+
+    .navbar a {
+        display: block;
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    /* Pokud je checkbox zaškrtnutý, zobrazí se menu */
+    #menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 831px){
+
 }
