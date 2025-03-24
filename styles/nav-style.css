@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 7vw;
     background: var(--orange);
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@
     cursor: pointer;
 }
 
-/* Media Query pro mobilní zobrazení */
+/* hamburg menu */
 @media (max-width: 1279px) {
     .menu-icon {
         display: block;
@@ -75,20 +75,18 @@
     .navbar {
         display: none;
         flex-direction: column;
-        position: fixed; /* Umožní pokrytí celé obrazovky */
+        position: fixed;
         top: 0;
         left: 0;
-        width: 100%; /* Zabere celou šířku */
-        height: 100%; /* Zabere celou výšku */
+        width: 100%;
+        height: 100%; 
         background: var(--orange);
         opacity: 0.9;
-        border-radius: 0; /* Zrušení zaoblených rohů */
-        box-shadow: none; /* Odstranění stínu */
-        z-index: 1000; /* Zajištění, že bude nad ostatními prvky */
-        padding-top: 70px; /* Posunutí obsahu dolů, aby nepřekrýval horní část */
+        border-radius: 0;
+        box-shadow: none;
+        z-index: 1000; 
+        padding-top: 70px; 
     }
-    
-    
 
     .navbar a {
         display: block;
@@ -102,6 +100,3 @@
     }
 }
 
-@media screen and (max-width: 831px){
-
-}

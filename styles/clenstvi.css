@@ -1,10 +1,12 @@
 .stan-clen{
-    background-image: linear-gradient(to bottom right, #BF4141, #FCC0C5);
+    background-color: var(--secondary);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 50px;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .nadpis-stan{
@@ -53,18 +55,21 @@
     max-height: 200px;
 }
 
+
+
 .odkazy-button a{
-    background-color: var(--white);
-    color: black;
+    background-color: black;
+    color: var(--white);
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: New Rocker;
 }
 
 .odkazy-button a:hover{
-    background-color: rgb(181, 175, 175);
-    color: rgb(0, 0, 0);
+    background-color: rgb(14, 13, 13);
+    color: var(--white);
 
 }
 
@@ -72,7 +77,50 @@
     position: relative;
     bottom: 169px;
     right: 20px;
+    filter: drop-shadow(8px 8px 10px rgba(0, 0, 0, 0.2))
 }
+
+@media screen and (max-width: 1191px){
+    .kontent-stan{
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .stan-clen{
+        height: 400px;
+        padding: 0;
+    }
+    .maskot-stan img{
+        display: none;
+    }
+    .odkazy-stan{
+        width: 60%;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .stan-clen{
+        height: 500px;
+    }
+    .odkazy-stan{
+        width: 100vw;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .nadpis-stan h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
 
 .vyhody{
     display: flex;
@@ -106,6 +154,66 @@
     height: 500px;
 }
 
+.vyhody-img img{
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 1355px){
+    .vyhody{
+        flex-direction: column;
+        gap: 0;
+    }
+    .vyhody-kon{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 40vw;
+        width: 100vw;
+        padding-top: 20px;
+    }
+    .vyhody-kon ul{
+        text-align: left;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 905px){
+    .vyhody-kon ul{
+        width: 80%;
+    }
+    .vyhody{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 691px){
+    .vyhody-img img{
+        width: 80vw;
+    }
+    .vyhody{
+        padding-top: 50px; padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:526px){
+    .vyhody{
+        padding-top: 50px; padding-bottom: 50px;
+    }
+    .vyhody-kon{
+        height: 400px;
+    }
+    .vyhody-kon h1{
+        font-size: 30px;
+    }
+    .vyhody-img{
+        height: 300px;
+    }
+}
+
+
+
+
 
 
 .druhy-clenstvi{
@@ -123,4 +231,32 @@
     flex-direction: column;
     align-items: start;
     width: 400px; height: 230px;
+}
+
+@media screen and (max-width: 1345px){
+    .druhy-clenstvi{
+        flex-direction: column;
+        width: 100vw;
+    }
+    .clenstvi{
+        width: 70vw;
+        height: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 691px){
+    .clenstvi{
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 491px){
+    .clenstvi{
+        height: 400px;
+    }
+    .clenstvi h1{
+        font-size: 30px;
+    }
 }

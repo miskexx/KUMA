@@ -6,7 +6,7 @@
     #98042D 50%,
     #98042D 100%
   );
-    padding: 50px;
+    padding: 50px; padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,11 +14,38 @@
     gap: 20px;
 }
 .my img{
-  width: 800px;
+  width: 900px;
 }
 
 .my h1{
   color: var(--white);
+}
+
+@media screen and (max-width: 1279px){
+  .my {
+    padding: 10px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 982px){
+  .my h1{
+    font-size: 30px;
+    text-align: center;
+  }
+  .my h3{
+    font-size: 20px;
+  }
+  .my img{
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 718px){
+  .my h3{
+    font-size: 15px;
+    text-align: center;
+  }
 }
 
 .kdo-jsme{
@@ -28,19 +55,33 @@
   justify-content: center;
   width: 100%;
   gap: 60px;
-  padding: 50px;
+  padding: 100px 50px 100px 50px;
 }
 
 .kdo-jsme img{
+  width: 400px;
   border: 3px solid black;
   border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .kdo-popis{
-  width: 40%;
+  width: 40vw;
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 982px){
+  .kdo-jsme{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .kdo-popis{
+    width: 100%;
+  }
+}
+
 
 .cile{
   background-color: var(--secondary);
@@ -48,7 +89,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 50px; padding-top: 100px; padding-bottom: 100px;
   gap: 10%;
 }
 
@@ -74,6 +115,13 @@
   height: 500px;
 }
 
+@media screen and (max-width: 982px){
+  .cile{
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 .nadpis-rada{
   padding: 50px;
 }
@@ -95,6 +143,7 @@
   place-items: center;
   justify-content: center;
   align-content: center;
+  padding-bottom: 100px;
 }
 
 .card{
@@ -104,6 +153,7 @@
   display: flex;
   gap: 1px;
   flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .card-content{
@@ -133,26 +183,67 @@
   text-align: center;
 }
 
+.jmeno-karta h2{
+  font-size: 24px
+}
 
 .social-icons{
   position: relative;
   top:2px; left: 10px;
 }
 
+
+@media screen and (max-width: 1279px){
+  .cards{
+
+    grid-template-columns: repeat(2 ,450px );
+    grid-template-rows: repeat(2, 450px);
+
+  }
+}
+
+@media screen and (max-width: 982px){
+  .cards{
+
+    grid-template-columns: repeat(1 ,450px );
+    grid-template-rows: repeat(1, 450px);
+
+  }
+}
+
+@media screen and (max-width: 704px){
+  .nadpis-rada img{
+    width: 50px;
+  }
+  .nadpis-rada h1{
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
 .mapa{
-  color: var(--white);
+  background-color: var(--secondary);
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 50px;
+  padding: 100px 0px 100px 0px;
 }
+
+#mapa-google{
+  width: 700px;
+  height: 450px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
 
 .nadpis{
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   width: 80%;
 }
 
@@ -173,18 +264,52 @@
   justify-content: center;
   align-items: center;
   gap: 10%;
-  width: 80%;
+  width: 60%;
 }
 
 .pod-mapou{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  width: 80%;
+  align-items: start;
+  width: 100%;
 }
 
-.jmeno-karta h2{
-  font-size: 24px
+
+@media screen and (max-width: 1061px){
+  .mapa-info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    width: 100vw;
+  }
+  .pod-mapou{
+    flex-direction: row;
+  }
 }
 
+
+@media screen and (max-width: 982px){
+  #mapa-google{
+    width: 70vw;
+    height: 40vw;
+  }
+
+  .pod-mapou{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .kdo-jsme img{
+    width: 300px;
+  }
+  .cilfoto{
+    width: 300px;
+    height: auto;
+  }
+}

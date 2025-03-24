@@ -75,8 +75,8 @@
 }
 
 .hero-buttons{
+    display: flex;
     margin-top: 20px;
-    justify-content: space-around;
 }
 
 .button-prihlaska{
@@ -102,12 +102,12 @@
     border: none;
     color: black;
     background-color: var(--secondary);
-    padding: 15px 32px;
+    padding: 15px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin-right: 20px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
@@ -116,6 +116,38 @@
     color: var(--secondary);
     background-color: #000000;
 }
+
+@media screen and (max-width: 725px){
+    .left-top h2{
+        font-size: 20px;
+    }
+    .left-top h3{
+        font-size: 16px;
+    }
+    .hero{
+        text-align: center;
+    }
+    .hero-left{
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 522px){
+    .hero-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .button-prihlaska,
+    .button-oddily {
+        width: 100% ; 
+        max-width: 250px;
+        text-align: center;
+        display: block;
+        margin: 5px auto;
+    }
+}
+
+
 /* hero sekce */
 
 /* o nas sekce */

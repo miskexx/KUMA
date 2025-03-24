@@ -41,3 +41,23 @@ li {
     width: 80%;
     gap: 20px 70px;
 }
+
+@media screen and (max-width: 1061px){
+    .kontent-oddilu, .kontent-oddilu-1{
+        flex-direction: column;
+        width: 80vw;
+    }
+    h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    .clensky-oddil{
+        width: 100%;
+        padding: 50px 20px 50px 20px;
+    }
+    .clensky-oddil-1{
+        width: 100%;
+        padding: 50px 20px 50px 20px;
+    }
+    
+}
