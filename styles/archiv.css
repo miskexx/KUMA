@@ -1,0 +1,54 @@
+.nadpis-arch{
+  text-transform: uppercase;
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 50px;
+}
+
+.kolapsy{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 50px;
+}
+
+.drop{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+
+.collapsible {
+    background-color: var(--secondary);
+    color: black;
+    cursor: pointer;
+    padding: 25px;
+    width: 80vw;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.active-col, .collapsible:hover {
+    background-color: #f7a7ae;
+    width: 80vw;
+}
+
+.content {
+    width: 80vw;
+    border-radius: 2px;
+    padding: 25px;
+    display: none;
+    overflow: hidden;
+    background-color: #f7a7ae;
+}
+.content p{
+  padding-left: 5vw;
+}
+  

@@ -1,0 +1,168 @@
+.nadpis-kni h1{
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.uvod{
+    background-color: var(--secondary);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    padding: 50px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.p-uvod {
+    width: 40vw;
+}
+.p-uvod p{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1021px){
+    .p-uvod {
+        width: 60vw;
+    }
+    .uvod{
+        gap: 5vw;
+    }
+}
+
+@media screen and (max-width: 665px){
+    .uvod{
+        flex-direction: column;
+        padding: 5vw;
+    }
+    .p-uvod{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .p-uvod p{
+        text-align: center;
+        font-size: 18px;
+        width: 500px;
+    }
+}
+
+.list{
+    justify-items: start;
+    color: var(--white);
+    padding: 100px;
+    padding-left: 20vw;
+
+}
+
+.list li {
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 640px){
+    .list{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    }
+    
+}
+
+
+.rad{
+    background-color: var(--secondary);
+    color: black;
+    padding: 50px 19vw;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vytah{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vytah li{
+    margin-left: 5vw;
+    margin-bottom: 10px;
+}
+
+.rad-stazeni{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.rad-button{
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px 30px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.rad-button:hover{
+    background-color: #b31f48;
+}
+
+@media screen and (max-width: 640px){
+    .rad{
+        padding: 50px 10vw;
+    }
+    .vytah{
+        width: 100%;
+    }
+    
+}
+
+
+.aktualne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20vw;
+}
+.seznam{
+    background-color: var(--secondary);
+    color: black;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.seznam:hover{
+    background-color: #f7959c;
+    color: black;
+}
+
+@media screen and (max-width: 665px){
+    .seznam img{
+        width: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 413px){
+    .seznam{
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    
+}

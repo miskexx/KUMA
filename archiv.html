@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>KUMA</title>
-        <link rel="icon" src="./images/maskot1111.png" type="image/png">
+        <link rel="icon" href="./images/favicon.png" type="image/png">
         <link href="./styles/style.css" rel="stylesheet">
         <link href="./styles/nav-style.css" rel="stylesheet">
         <link href="./styles/archiv.css" rel="stylesheet">
@@ -25,7 +25,6 @@
         <header class="header">
             <a href="./index.html" class="logo">KUMA</a>
         
-            <!-- Checkbox pro togglování menu -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">☰</label>
         
@@ -41,7 +40,55 @@
         
         
         <main>
-            <h1>archiv</h1>
+            <h1 class="nadpis-arch">archiv</h1>
+
+            <section class="kolapsy">
+
+                <div class="drop">
+                    <button type="button" class="collapsible">STARÉ STANOVY</button>
+                        <div class="content">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                        </div>
+                </div>
+                
+                <div class="drop">
+                    <button type="button" class="collapsible">ZÁPISY ZE SCHŮZÍ</button>
+                        <div class="content">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                        </div>
+                </div>
+
+                <div class="drop">
+                    <button type="button" class="collapsible">VÝROČNÍ ZPRÁVY</button>
+                        <div class="content">
+                            <p>1</p>
+                            <p>2</p>
+                            <p>3</p>
+                    </div>
+                </div>
+
+            </section>
+
+            
+
+            <script src="collapse.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         </main>
         
