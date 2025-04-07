@@ -51,4 +51,8 @@
 .content p{
   padding-left: 5vw;
 }
-  
+
+.content a{
+  color: black;
+  margin-bottom: 50px;
+}

@@ -135,6 +135,10 @@
     align-items: center;
     padding: 50px 20vw;
 }
+.aktualne a{
+    text-decoration: none;
+}
+
 .seznam{
     background-color: var(--secondary);
     color: black;

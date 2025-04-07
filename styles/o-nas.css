@@ -1,24 +1,11 @@
 .my{
-  background: linear-gradient(
-    to top,
-    #FCC0C5 0%,
-    #FCC0C5 50%,
-    #98042D 50%,
-    #98042D 100%
-  );
-    padding: 50px; padding-bottom: 100px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-.my img{
-  width: 900px;
-}
-
-.my h1{
-  color: var(--white);
+    background-color: var(--secondary);
 }
 
 @media screen and (max-width: 1279px){
